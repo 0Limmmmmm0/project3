@@ -1223,7 +1223,7 @@
     color: var(--cherry);
 }
 
-.tull button:after {
+.tull button:after {s
     content: "";
     position: absolute;
     top: 0;
