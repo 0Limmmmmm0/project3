@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sub</title>
+    <title>숙소 정보</title>
     <link rel="stylesheet" href="css/sub.css" type="text/css">
     <link rel="stylesheet" href="css/sub(1359px-1000px).css" type="text/css">
     <link rel="stylesheet" href="css/sub(999px-765px).css" type="text/css">
@@ -33,7 +33,7 @@
                 </div>
                 <ul class="top_nav">
                     <li><a href="../index.html">홈</a></li>
-                    <li><a href="sub3.html">호텔</a></li>
+                    <li><a href="sub3.html" class="active">호텔</a></li>
                     <li><a href="../sub3/mine.html">지역</a></li>
                     <li><a href="../sub1/menu.html">리뷰콕콕</a>
                         <ul class="sub_nav">
@@ -134,7 +134,6 @@
             <div id="hokkaido">
                 <div class="minibox1">
                     <div class="icon">
-
                         <img src="icon/hokkaido.png" alt="홋카이도지도">
                         <h4>홋카이도</h4><br>
                         <img src="icon/hotel.png" alt="호텔" class="ryokan" style="margin-bottom: -3px;">
@@ -352,7 +351,7 @@
                     <div class="gan5">
                         <div class="box_flex">
                             <img src="img/도톤보리.png" alt="도톤보리" style="width: 120px; height: 120px;"><br>
-                            <img src="icon/more2_.png" class="dot" alt="more">><br>
+                            <img src="icon/more2_.png" class="dot" alt="more"><br>
                             <h5 class="tttt2">도톤보리 인근</h5><br>
                             <div class="in">
                                 <img src="icon/hotel.png" class="hotel_mini1" alt="hotel">
@@ -366,7 +365,7 @@
                     <div class="gan6">
                         <div class="box_flex">
                             <img src="img/비와호.png" alt="비와호" style="width: 120px; height: 120px;"><br>
-                            <img src="icon/more3.png" class="dot" alt="more">><br>
+                            <img src="icon/more3.png" class="dot" alt="more"><br>
                             <h5 class="tttt2">비와호 인근</h5><br>
                             <div class="in">
                                 <img src="icon/hotel.png" class="hotel_mini1" alt="hotel">
@@ -380,7 +379,7 @@
                     <div class="gan7">
                         <div class="box_flex">
                             <img src="img/기요미즈데라.png" alt="기요미즈데라" style="width: 120px; height: 120px;"><br>
-                            <img src="icon/more2_.png" class="dot" alt="more">><br>
+                            <img src="icon/more2_.png" class="dot" alt="more"><br>
                             <h5 class="tttt2">기요미즈데라 인근</h5><br>
                             <div class="in">
                                 <img src="icon/hotel.png" class="hotel_mini1" alt="hotel">
@@ -394,7 +393,7 @@
                     <div class="gan8">
                         <div class="box_flex">
                             <img src="img/고베하버랜드.png" alt="고베 하버랜드" style="width: 120px; height: 120px;"><br>
-                            <img src="icon/more3.png" class="dot" alt="more">><br>
+                            <img src="icon/more3.png" class="dot" alt="more"><br>
                             <h5 class="tttt2">고베 하버랜드 인근</h5><br>
                             <div class="in">
                                 <img src="icon/hotel.png" class="hotel_mini1" alt="hotel">
@@ -1084,7 +1083,7 @@
         </div>
 
         <div id="footer_bottom2">
-            <span><img src="/img/rogo.png" alt="logo" id="footer_imgrogo"></span>
+            <span><img src="img/rogo.png" alt="logo" id="footer_imgrogo"></span>
 
             <ul>
                 <li><img src="img/logo_foot_api.png" alt="footerImg"></li>
@@ -1116,6 +1115,8 @@
 
                 $(".minibox1").click(function () {
 
+                    $("#hokkaido> div").removeClass("bg");
+                    $(this).addClass("bg");
                     $("#hokkaido_sub").show();
 
                     $("#hokkaido_sub2").hide();
@@ -1128,6 +1129,8 @@
                 });
 
                 $(".minibox2").click(function () {
+                    $("#hokkaido> div").removeClass("bg");
+                    $(this).addClass("bg");
 
                     $("#hokkaido_sub2").show();
 
@@ -1140,6 +1143,8 @@
                 });
 
                 $(".minibox3").click(function () {
+                    $("#hokkaido> div").removeClass("bg");
+                    $(this).addClass("bg");
 
                     $("#hokkaido_sub3").show();
 
@@ -1152,6 +1157,8 @@
                 });
 
                 $(".minibox4").click(function () {
+                    $("#hokkaido> div").removeClass("bg");
+                    $(this).addClass("bg");
 
                     $("#hokkaido_sub4").show();
 
@@ -1176,6 +1183,8 @@
 
             $(".font1").click(function () {
 
+                $(".tull> button").removeClass("co");
+                $(this).addClass("co");
                 $("#hotel").show();
 
                 $("#ryokan").hide();
@@ -1186,6 +1195,9 @@
 
             $(".font2").click(function () {
 
+                $(".tull> button").removeClass("co");
+                $(this).addClass("co");
+
                 $("#ryokan").show();
 
                 $("#hotel").hide();
@@ -1195,6 +1207,9 @@
             });
 
             $(".font3").click(function () {
+
+                $(".tull> button").removeClass("co");
+                $(this).addClass("co");
 
                 $("#exotic").show();
 

@@ -61,7 +61,7 @@
         color: #666;
     }
     
-    .top_nav>li:hover>a {
+    .top_nav>li:hover>a, .top_nav>li a.active {
         color: black;
         font-weight: bold;
     
